@@ -27,17 +27,17 @@ class _ToggleButtonState extends State<ToggleButton> {
             borderColor: Colors.orange,
             selectedColor: Colors.green,
             onPressed: (int index) {
-              setState(() {
-                for (int buttonIndex = 0;
-                    buttonIndex < _isSelected.length;
-                    buttonIndex++) {
-                  if (buttonIndex == index) {
-                    _isSelected[buttonIndex] = !_isSelected[buttonIndex];
-                  } else {
-                    _isSelected[buttonIndex] = false;
-                  }
-                }
-              });
+              // setState(() {
+              //   for (int buttonIndex = 0;
+              //       buttonIndex < _isSelected.length;
+              //       buttonIndex++) {
+              //     if (buttonIndex == index) {
+              //       _isSelected[buttonIndex] = !_isSelected[buttonIndex];
+              //     } else {
+              //       _isSelected[buttonIndex] = false;
+              //     }
+              //   }
+              // });
             },
             children: [
               Icon(Icons.home),
