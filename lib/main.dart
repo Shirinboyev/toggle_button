@@ -18,8 +18,14 @@ class _ToggleButtonState extends State<ToggleButton> {
     return MaterialApp(
       home: Scaffold(
           body: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
         children: [
           ToggleButtons(
+            borderRadius: BorderRadius.circular(30),
+            color: Colors.red,
+            hoverColor: Color.fromARGB(255, 134, 185, 227),
+            borderColor: Colors.orange,
+            selectedColor: Colors.green,
             onPressed: (int index) {
               setState(() {
                 for (int buttonIndex = 0;
